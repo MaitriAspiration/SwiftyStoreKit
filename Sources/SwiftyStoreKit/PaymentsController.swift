@@ -132,7 +132,7 @@ class PaymentsController: TransactionController {
 
             payment.callback(.deferred(purchase: purchase))
 
-            payments.remove(at: paymentIndex)
+//            payments.remove(at: paymentIndex) //Remove for pending payment transaction
             return true
         }
 
